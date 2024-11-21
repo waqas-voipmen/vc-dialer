@@ -2,293 +2,435 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VICIdial & VoIP Services</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f6f9;
-            margin: 0;
-            padding: 0;
-        }
+    <meta charset="utf-8">
+    <title>VICIdial - Custom Call Center Solutions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-        .navbar {
-            background-color: #1e3a8a;
-        }
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-        .navbar-brand, .nav-link {
-            color: #fff !important;
-            font-weight: 500;
-        }
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
 
-        .hero {
-            background: linear-gradient(to right, #1e3a8a, #2563eb);
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-            border-radius: 12px;
-            margin-top: 20px;
-            margin-bottom: 40px;
-        }
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        .hero h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-        .hero p {
-            font-size: 1.2rem;
-        }
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        .section {
-            margin: 50px 0; /* Space between each section */
-            padding: 30px 0; /* Padding inside each section */
-        }
-
-        .card {
-            border: none;
-            border-radius: 12px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .card img {
-            border-radius: 12px 12px 0 0;
-            object-fit: cover;
-        }
-
-        .contact-card {
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-        }
-
-        .contact-card h2 {
-            color: #1e3a8a;
-            font-weight: 700;
-        }
-
-        .form-label {
-            font-size: 1rem;
-            font-weight: 500;
-            color: #1e3a8a;
-        }
-
-        .form-control {
-            border-radius: 10px;
-            padding: 10px;
-            font-size: 0.9rem;
-        }
-
-        .btn-primary {
-            background-color: #2563eb;
-            border: none;
-            font-weight: 500;
-            padding: 10px 20px;
-            border-radius: 10px;
-        }
-
-        .btn-primary:hover {
-            background-color: #1e3a8a;
-        }
-
-        .footer {
-            background-color: #1e3a8a;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .footer a {
-            color: #60a5fa;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        .carousel-item img {
-            height: 500px;
-            object-fit: cover;
-            border-radius: 12px;
-        }
-
-        /* Centering the content inside the container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-
-        /* Centering the text inside each card */
-        .card-body {
-            text-align: center;
-        }
-
-        /* Ensuring that columns are centered properly on smaller screens */
-        @media (max-width: 768px) {
-            .carousel-item img {
-                height: 300px;
-            }
-        }
-    </style>
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">VICIdial & VoIP Solutions</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Our Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Our Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary">
+                <i class="fa  fa-headset text-primary mb-4"></i>
+                VICIdial
+            </h2>
+        </a>
+        
+        
+        
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="Services.html" class="nav-item nav-link">services</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="https://wa.me/923298817835" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" target="_blank">
+                Join Now <i class="fa fa-arrow-right ms-3"></i>
+            </a>        </div>
     </nav>
+    <!-- Navbar End -->
 
-    <!-- Hero Section with Slider -->
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://via.placeholder.com/1500x600?text=VICIdial+Solutions" class="d-block w-100" alt="VICIdial Solutions">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1>Professional VICIdial & VoIP Services</h1>
-                    <p>Expert solutions for VICIdial setup, custom development, API integration, and 24/7 support.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/1500x600?text=VoIP+Services" class="d-block w-100" alt="VoIP Services">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1>High-Quality VoIP Solutions</h1>
-                    <p>Seamless communication solutions with unbeatable clarity and reliability.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/1500x600?text=24/7+Support" class="d-block w-100" alt="24/7 Support">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1>24/7 Expert Support</h1>
-                    <p>Our team is here to ensure smooth operations round the clock.</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <!-- Services Section -->
-    <div class="container section" id="services">
-        <h2 class="text-center mb-5">Our Services</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <div class="card p-4">
-                    <h5>Custom Development</h5>
-                    <p>Tailored VICIdial solutions to fit your business needs.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card p-4">
-                    <h5>API Integration</h5>
-                    <p>Seamless integration of APIs for enhanced functionality.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card p-4">
-                    <h5>Support Services</h5>
-                    <p>24/7 expert support to keep your operations smooth.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Meet Our Team Section -->
-    <div class="container section" id="team">
-        <h2 class="text-center mb-5">Meet Our Team</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Team Member">
-                    <div class="card-body">
-                        <h5>John Doe</h5>
-                        <p>Senior Developer</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Team Member">
-                    <div class="card-body">
-                        <h5>Jane Smith</h5>
-                        <p>Project Manager</p>
+<!-- Static Banner Start -->
+<div class="container-fluid p-0 mb-5">
+    <div class="position-relative">
+        <img class="img-fluid" src="img/ban.jpg" alt="VICIdial Solutions">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+            <div class="container">
+                <div class="row justify-content-start">
+                    <div class="col-sm-10 col-lg-8">
+                        <h5 class="text-primary text-uppercase mb-3">VICIdial Solutions</h5>
+                        <h1 class="display-3 text-white">Boost Your Call Center Efficiency</h1>
+                        <p class="fs-5 text-white mb-4 pb-2">Optimize your customer interactions with our state-of-the-art VICIdial solutions. Manage campaigns, track performance, and enhance productivity effortlessly.</p>
+                        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Learn More</a>
+                        <a href="" class="btn btn-light py-md-3 px-md-5">Get Started</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<!-- Static Banner End -->
 
-    <!-- Contact Us Section -->
-    <div class="container section" id="contact">
-        <h2 class="text-center mb-5">Contact Us</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="contact-card">
-                    <h2>Get in Touch</h2>
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+
+
+
+  <!-- Service Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- VICIdial Customization -->
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                        <h5 class="mb-3">VICIdial Customization</h5>
+                        <p>Customized solutions to optimize your VICIdial setup and enhance performance.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- VoIP Integration -->
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-phone-alt text-primary mb-4"></i>
+                        <h5 class="mb-3">VoIP Integration</h5>
+                        <p>Seamless VoIP integration to ensure high-quality calls and efficient routing.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Call Center Analytics -->
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-chart-line text-primary mb-4"></i>
+                        <h5 class="mb-3">Call Center Analytics</h5>
+                        <p>Detailed analytics to track and improve your call center’s performance.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- VoIP Solutions -->
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-network-wired text-primary mb-4"></i>
+                        <h5 class="mb-3">VoIP Solutions</h5>
+                        <p>Reliable and scalable VoIP solutions tailored to your business needs.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<!-- Service End -->
 
-    <!-- Footer Section -->
-    <div class="footer">
-        <p>&copy; 2024 VICIdial & VoIP Solutions. All rights reserved.</p>
+
+
+   <!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="img-fluid position-absolute w-100 h-100" src="img/abuottt.jpg" alt="About VICIdial" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                <h1 class="mb-4">Welcome to VICIdial Solutions</h1>
+                <p class="mb-4">We specialize in providing tailored VICIdial solutions to enhance your call center's performance. Whether you need custom development, API integration, or reliable support, we’ve got you covered.</p>
+                <p class="mb-4">Our team ensures seamless implementation and management of your VICIdial platform, helping you achieve efficient operations and outstanding results for your business.</p>
+                <div class="row gy-2 gx-4 mb-4">
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>API Integration</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Custom Development</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Support</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>System Optimization</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Training & Documentation</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Real-time Monitoring</p>
+                    </div>
+                </div>
+                <a class="btn btn-primary py-3 px-5 mt-2" href="">Learn More</a>
+            </div>
+        </div>
     </div>
+</div>
+<!-- About End -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+ 
+
+
+<!-- Services Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Services</h6>
+            <h1 class="mb-5">Our Expertise</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <!-- Custom Development -->
+            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item bg-light p-4 text-center hover-effect">
+                    <i class="fa fa-3x fa-cogs text-primary mb-4"></i>
+                    <h5 class="mb-4">Custom Development</h5>
+                    <p>Tailored VICIdial solutions to meet your business requirements with enhanced functionalities and seamless integration.</p>
+                    <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Learn More</a>
+                </div>
+            </div>
+            <!-- API Integration -->
+            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item bg-light p-4 text-center hover-effect">
+                    <i class="fa fa-3x fa-plug text-primary mb-4"></i>
+                    <h5 class="mb-4">API Integration</h5>
+                    <p>Streamline your operations with robust API integrations that connect VICIdial with external systems and tools.</p>
+                    <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Learn More</a>
+                </div>
+            </div>
+            <!-- 24/7 Support -->
+            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item bg-light p-4 text-center hover-effect">
+                    <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                    <h5 class="mb-4">24/7 Support</h5>
+                    <p>Get round-the-clock technical support for your VICIdial system to ensure uninterrupted operations.</p>
+                    <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Learn More</a>
+                </div>
+            </div>
+            <!-- VoIP Dialer Solutions -->
+            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item bg-light p-4 text-center hover-effect">
+                    <i class="fa fa-3x fa-phone-alt text-primary mb-4"></i>
+                    <h5 class="mb-4">VoIP Dialer Solutions</h5>
+                    <p>Set up and manage high-performance VoIP dialers tailored to your business communication needs.</p>
+                    <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+
+
+
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6>
+                <h1 class="mb-5">Expert Instructors</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Instructor Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Instructor Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Instructor Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Instructor Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+  <!-- Testimonial Start -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+            <h1 class="mb-5">Our Clients Say!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel position-relative">
+            <div class="testimonial-item text-center">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                <h5 class="mb-0">John Smith</h5>
+                <p>Business Owner</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">"The VICIdial team provided exceptional support! Their custom development tailored our dialer exactly to our needs. Highly recommend them!"</p>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Emily Johnson</h5>
+                <p>Call Center Manager</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">"Their API integration made our operations seamless. Great team, great service, and always responsive!"</p>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Michael Brown</h5>
+                <p>IT Specialist</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">"The 24/7 support is a lifesaver! We’ve never had downtime thanks to their proactive and efficient team."</p>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Sophia Davis</h5>
+                <p>Marketing Director</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">"VICIdial’s customization and robust features transformed our customer outreach. Their expertise is unmatched!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+        
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-white mb-3">Quick Links</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Contact Us</a>
+                <a class="btn btn-link" href="">Privacy Policy</a>
+                <a class="btn btn-link" href="">Terms & Conditions</a>
+                <a class="btn btn-link" href="">FAQs & Help</a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-white mb-3">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>5-Babar Market, 79-Ferozpur Road, Lahore</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+923298817835</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>voip.tech.pk@gmail.com</p>
+                <p class="mb-2">Specializing in VICIdial and VoIP solutions, offering 24/7 support and custom development for all your business needs.</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-white mb-3">Newsletter</h4>
+                <p>Stay updated with the latest in VICIdial and VoIP technology by subscribing to our newsletter.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
